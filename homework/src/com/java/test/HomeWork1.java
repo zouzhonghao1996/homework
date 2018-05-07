@@ -79,16 +79,17 @@ public class HomeWork1 {
 			result = result * down;
 		}
 		System.out.println(down + "的" + up + "次方是" + result);
-
+*/
 		double money = 0;
 		int day = 0;
 		while (money <= 100) {
+		    money = money + 2.5;
 			day = day + 1;
 			if (day % 5 == 0) {
 				money = money - 6;
 				System.out.println("第" + day + "天花去6元，还剩" + money + "元！");
 			}
-			money = money + 2.5;
+			
 		}
 		System.out.println("要经过" + day + "天的储存才能存上100元！");
 
@@ -102,7 +103,7 @@ public class HomeWork1 {
 				System.out.println();
 			}
 			i = i + 1;
-		}*/
+		}
 	}
 
 }
