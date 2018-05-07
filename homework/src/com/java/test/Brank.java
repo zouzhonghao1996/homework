@@ -6,12 +6,13 @@ public class Brank {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// 银行存钱
 	/*	double money=10000;
         for(int i=0;i<5;i++) {
         	money=money+money*3/1000;
         }
         System.out.println(money);*/
-		
+		//正整数翻转输出
 		 Scanner scanner=new Scanner(System.in);
 	     System.out.println("请输入一个数：");
 	     String input=scanner.nextLine();

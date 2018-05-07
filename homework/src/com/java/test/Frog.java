@@ -4,6 +4,7 @@ public class Frog {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// 青蛙爬井
       int day=1;
       int high=0;
       while(true) {
