@@ -10,10 +10,10 @@ public class HomeWorkArray {
 		System.out.println("请输入6个数：");
 		int[] arr = new int[6];
 		int change = 0;
-		for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			arr[i] = scanner.nextInt();
 		}
-		for (int i = 5; i > 0; i--) {
+		for (int i = arr.length-1; i > 0; i--) {
 			for (int j = 0; j < i ; j++) {
 				if (arr[j] > arr[j + 1]) {
 					change = arr[j];
@@ -23,7 +23,7 @@ public class HomeWorkArray {
 			}
 		}
 		
-		for(int i = 0; i < 6; i++) {
+		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]+" ");
 		}
 	}

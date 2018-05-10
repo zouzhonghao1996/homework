@@ -19,7 +19,7 @@ public class Test6 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(gys(11, 99));
-		System.out.println(11*99/gys(11,99));
+		System.out.println(gys(6, 9));
+		System.out.println(6*9/gys(6,9));
 	}
 }

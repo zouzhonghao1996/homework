@@ -15,12 +15,18 @@ public class Brank {
 		//正整数翻转输出
 		 Scanner scanner=new Scanner(System.in);
 	     System.out.println("请输入一个数：");
-	     String input=scanner.nextLine();
-	         String x="";
+	     int num=scanner.nextInt();
+	     /*    String x="";
 	     for(int i=(input.length()-1);i>=0;i--) {
  	        x=x+input.charAt(i);   
 	     }
-	     System.out.println(x);
+	     System.out.println(x);*/
+		int s = 0;
+		while (num > 0) {
+			s = s * 10 + num % 10;
+			num /= 10;
+		}
+		System.out.println(s);
 	}
 
 }
