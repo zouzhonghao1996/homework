@@ -18,6 +18,6 @@ public class VIPCoustomer extends Coustomer {
 	}
 
 	public void touSu() {
-		System.out.println("投诉信息：\nVIP" + level + "级别" + super.getName() + "先生/女士正在投诉中...");
+		System.out.println("投诉信息：\nVIP" + level + "级别" + getName() + "先生/女士正在投诉中...");
 	}
 }

@@ -1,6 +1,6 @@
 package homework.javaoopch09;
 
-public class Car extends Vehicles {
+public  class Car extends Vehicles {
 	protected int seats;
 
 	public Car(String brand, String color, int seats) {

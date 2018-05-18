@@ -1,6 +1,6 @@
 package homework.javaoopch11;
 
-public class Coustomer {
+public  class Coustomer {
 	private String name;
 
 	public Coustomer(String name) {
