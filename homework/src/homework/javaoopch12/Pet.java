@@ -13,16 +13,24 @@ public class Pet {
 		this.partner = partner;
 	}
 
-	public void canMarry(String name, String gender) {
-		if (this.gender == gender) {
+	public Pet(String name, int age, String gender) {
+		this.name = name;
+		this.age = age;
+		this.gender = gender;	
+	}
+	public static void canMarry(Pet pet1, Pet pet2) {
+		if (pet1.gender == pet2.gender) {
 			System.out.println("同性不能结婚！");
-		} else if (this.partner != null) {
+		} else if (pet1.partner != null && pet2.partner != null) {
 			System.out.println("有配偶不能结婚！");
-		} else if ((this.gender == "雄性" && this.age < 5) || (this.gender == "雌性" && this.age < 4)) {
+		} else if ((pet1.gender == "雄性" && pet1.age < 5) || (pet1.gender == "雌性" && pet1.age < 4)) {
+			System.out.println("年龄未到不能结婚！");
+		} else if ((pet2.gender == "雄性" && pet2.age < 5) || (pet2.gender == "雌性" && pet2.age < 4)) {
 			System.out.println("年龄未到不能结婚！");
 		} else {
-			System.out.println(this.name + "和" + name + "满足条件恭喜你们结婚！");
-			this.partner = name;
+			System.out.println(pet1.name + "和" + pet2.name + "满足条件恭喜你们结婚！");
+			pet1.partner = pet2.name;
+			pet2.partner = pet1.name;
 		}
 	}
 

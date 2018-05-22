@@ -10,6 +10,7 @@ public class AnimalTest {
 	private static void go(Animal[] animal) {
 		for(Animal animals:animal) {
 			animals.run();
+			
 		}
 		/*for(int i=0;i<animal.length;i++) {
 			Animal animals=animal[i];
